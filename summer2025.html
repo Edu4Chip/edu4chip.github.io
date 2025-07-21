@@ -19,6 +19,50 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 		<!--link rel="manifest" href="site.webmanifest"-->
+
+		<style>
+			.schedule-table {
+			display: flex;
+			flex-wrap: wrap;
+			}
+
+			.schedule-column-1 {
+			width: 50%;
+			box-sizing: border-box;
+			padding-left: 0px;
+			padding-top: 10px;
+			padding-right: 10px;
+			padding-bottom: 10px;
+			border-right: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			}
+			.schedule-column-2 {
+			width: 50%;
+			box-sizing: border-box;
+			padding-left: 10px;
+			padding-top: 10px;
+			padding-right: 0px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #ccc;
+			}
+
+			@media (max-width: 800px) {
+			.schedule-column-1 {
+				width: 100%;
+				padding-left: 0px;
+				padding-right: 0px;
+				border-right: 0px;
+				border-bottom: 0px
+			}
+			.schedule-column-2 {
+				width: 100%;
+				box-sizing: border-box;
+				padding-left: 0px;
+				border-bottom: 0px
+			}
+			}
+		</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -48,7 +92,7 @@
 <!--------------------------------------------->
 						<!-- Banner -->
 						<section style="margin-top: 3em; margin-bottom: 1em; padding-top: 0em; padding-bottom: 0em;">
-							<span class="image main"><img src="images/summer2025.jpg" alt="" /></span>
+							<span class="image main"><img src="images/summer_25/summer2025.jpg" alt="" /></span>
 						</section>
 
 						<!-- Content -->
@@ -65,7 +109,7 @@
 							<h1 id="overview" style="margin-top: -0.75em;">Overview</h1>
 							<p>
 								<figure class="image right">
-									<img src="images/copenhagen.jpg" alt=""/>
+									<img src="images/summer_25/copenhagen.jpg" alt=""/>
 									<figcaption style="font-size: 0.8em; text-align: right;">Photo credit: Luca Pezzarossa.</figcaption>
 								</figure>
 								Welcome to the <strong>Edu4Chip Summer School 2025 on Chip Design</strong>. The summer school offers an introduction to the chip design process from specification to testing including the use of open-source tool chains.
@@ -76,8 +120,8 @@
 							<p>
 								The summer school is structured into two main parts:
 								<ul>
-									<li><strong>Online intro-day (August 11th)</strong> – Covering fundamental concepts in chip and digital design, with interactive exercises and project introductions.</li>
-									<li><strong>In-person program (August 18th to 22nd)</strong> – Held at DTU in Denmark, featuring in-depth lectures, hands-on activities, keynotes, and social events.</li>
+									<li><strong>Online intro-day (August 11th)</strong> - Covering fundamental concepts in chip and digital design, with interactive exercises and project introductions.</li>
+									<li><strong>In-person program (August 18th to 22nd)</strong> - Held at DTU in Denmark, featuring in-depth lectures, hands-on activities, keynotes, and social events.</li>
 								</ul>
 							</p>
 
@@ -153,7 +197,7 @@
 
 							<h2 id="transport">Transport</h2>
 							<p>
-								If you're arriving from abroad, the nearest airport is <strong>Copenhagen Airport (CPH)</strong>, which is well-connected to the city center by the Metro. The journey from the airport to central Copenhagen typically takes around 15–20 minutes.
+								If you're arriving from abroad, the nearest airport is <strong>Copenhagen Airport (CPH)</strong>, which is well-connected to the city center by the Metro. The journey from the airport to central Copenhagen typically takes around 15-20 minutes.
 							</p>
 							<p>
 								The summer school venue in Kongens Lyngby is connected to Copenhagen via the <strong>S-train (commuter train)</strong> and several bus lines. The commute from central Copenhagen to Lyngby takes approximately 30 minutes. Public transport in the Greater Copenhagen area is reliable, safe, and frequent.
@@ -177,12 +221,203 @@
 								Find below the schedule, and a detailed description of the content of the online intro-day, in-person lectures, keynotes, and other activities, as well as the learning objectives.
 							</p>
 
+							<h2 id="content">Schedule</h2>
 
-							<h2 id="content">Schedule (tentative)</h2>
+							<span class="image main"><img src="images/summer_25/summer2025_program_v7.jpg" alt="" /></span>
 
-							<span class="image main"><img src="images/summer2025_program_v6.jpg" alt="" /></span>
 
-							<h2 id="content">Online intro-day (August 11th)</h2>
+							<div class="schedule-table">
+								<div class="schedule-column-1">
+									<h3 style="margin-bottom: 0em;">Online Intro Day - Monday, August 11th</h3>
+									<i>Teacher for the day: Assoc. Prof. Luca Pezzarossa (Technical University of Denmark)</i>
+									<h4 style="margin-bottom: 0.5em; margin-top: 0.5em;">09:30 - 12:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Welcome</li>
+										<li>Introduction to the online intro day and summer school</li>
+										<li>Brush-up on Digital Design</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">12:00 - 13:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 1em;">
+										<li>Lunch break</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">13:00 - 14:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Brush-up on Digital Design (continues)</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">14:00 - 16:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Interactive Web-Based Exercises</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">16:00 - 16:30</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Outline of the Student Project</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">16:30 - 17:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Q&A and Discussion Session</li>
+									</ul>
+								</div>
+								
+								<div class="schedule-column-2">
+									<h3>In-person day 1 - Monday, August 18th</h3>
+									<h4 style="margin-bottom: 0.5em;">10:00 - 10:15</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Registration and coffee/breakfast</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">10:15 - 11:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Welcome from the organizers</li>
+										<li>Summer school introduction and overview</li>
+										<li>Welcome message from Prof. Jan Madsen, Head of Department at DTU Compute</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">11:00 - 12:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Presentation: <strong>A Nordic and European perspective on chips</strong>, by Claus Friis Pedersen (Danish Chip Competence Center) and Lars Palm (Swedish Chip Competence Center)</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">12:00 - 13:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Lunch served at the summer school location</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">13:00 - 13:50</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Keynote: <strong>From the 1st transistor to FinFETs</strong>, and beyond, by Assoc. Prof. Flemming Stassen (Technical University of Denmark)</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">13:50 - 14:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Break</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">14:00 - 15:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Presentation: <strong>The Edu4Chip project</strong>, by Edu4Chip partners</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">15:00 - 15:15</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Break: Coffee and refreshments</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">15:15 - 17:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Lecture: <strong>Chip design process overview</strong>, by Prof. Timo Hämäläinen (Tampere University)</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">17:00 - 18:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Quickfire introduction of students</li>
+									</ul>
+								</div>
+							</div>
+		
+							<div class="schedule-table">
+								<div class="schedule-column-1">
+									<h3>In-person day 2 - Tuesday, August 19th</h3>
+									<h4 style="margin-bottom: 0.5em;">09:00 - 12:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Lecture & hands-on session: <strong>Agile hardware design in HDL</strong>, by Prof. Martin Schoeberl (Technical University of Denmark)</li>
+										<li>Break for coffee and refreshments at 10:30</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">12:00 - 13:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Lunch at the kantine in Building 202</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">13:00 - 13:50</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Keynote: <strong>Design for low-power ICs for hearing instruments</strong>, by Evangelia Kasapaki and Vijay Kumar Bhat (Demant)</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">13:50 - 14:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Break</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">14:00 - 17:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Lecture & hands-on session: <strong>Systems on chip and interconnects</strong>, by Assoc. Prof. Luca Pezzarossa (Technical University of Denmark)</li>
+										<li>Break for coffee and refreshments at 15:00</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">17:10 - 19:30</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Picnic on DTU premises</li>
+										<li>Location: Wicked Rabbit Kantine in Building 342. <strong>Google Maps link:</strong> <a href="https://maps.app.goo.gl/iKtAkE2Es2kXks3R6" target="_blank">View location</a></li>
+									</ul>
+								</div>
+
+								<div class="schedule-column-2">
+									<h3>In-person day 3 - Wednesday, August 20th</h3>
+									<h4 style="margin-bottom: 0.5em;">09:00 - 12:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Lecture & hands-on session: <strong>Time-discrete analog circuits</strong>, by Dipl.-Ing. (Univ.) Markus Dietl (Technical University of Munich)</li>
+									<li>Break for coffee and refreshments at 10:30</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">12:00 - 13:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Lunch served at the summer school location</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">13:00 - 16:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Lecture & hands-on session: <strong>Verification of digital circuits</strong>, by Jacob Sander Andersen (Syosil)</li>
+										<li>Break for coffee and refreshments at 14:30</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">16:00 - 19:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Walking tour of Copenhagen (bring an umbrella!)</li>
+										<li>Bus to Copenhagen <strong>departs at 16:10 from outside Building 101</strong> (summer school location)</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">19:00 - 20:45</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Dinner in Copenhagen</li>
+										<li>Location: Restaurant Sult i Cinemateket, Vognmagergade 8B, 1120 København K. <strong>Google Maps link:</strong> <a href="https://maps.app.goo.gl/GLHnZgnss3ZhzjYb9" target="_blank">View location</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="schedule-table" style="margin-bottom: 1.5em;">
+								<div class="schedule-column-1" style="border-bottom: 0px">
+									<h3>In-person day 4 - Thursday, August 21st</h3>
+									<h4 style="margin-bottom: 0.5em;">09:00 - 12:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Lecture & hands-on session: <strong>Chip design process and challenges</strong>, by Assist. Prof. Ole Richter (Technical University of Denmark)</li>
+										<li>Break for coffee and refreshments at 10:30</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">12:00 - 13:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Lunch at the kantine in Building 202</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">13:00 - 13:50</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Keynote: <strong>"Basic concepts in modeling" - A discussion of George Box's famous statement 'All models are wrong, some are useful' with a strong focus on models in chip design</strong>, by Prof. Dr.-Ing. Wolfgang Ecker (Infineon / Technical University of Munich)</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">13:50 - 14:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Break</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">14:00 - 17:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Lecture - advanced topics: <strong>Asynchronous circuits</strong>, by Emeritus Prof. Jens Sparsø (Technical University of Denmark)</li>
+										<li>Lecture - advanced topics: <strong>Formal verification</strong>, by Assoc. Prof. Oliver Keszöcze (Technical University of Denmark)</li>
+										<li>Lecture - advanced topics: <strong>LEGO inspired chip design</strong>, by Prof. Ahmed Hemani (KTH Royal Institute of Technology)</li>
+										<li>Break for coffee and refreshments at 15:00</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">17:00 - 18:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Jogging route on DTU campus</li>
+									</ul>
+								</div>
+								<div class="schedule-column-2" style="border-bottom: 0px">
+									<h3>In-person day 5 - Friday, August 22nd</h3>
+									<h4 style="margin-bottom: 0.5em;">09:00 - 12:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Student presentations (count as exam)</li>
+										<li>Coffee and refreshments at 09:00</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">12:00 - 13:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Lunch served at the summer school location</li>
+									</ul>
+									<h4 style="margin-bottom: 0.5em;">13:00 - 14:00</h4>
+									<ul style="margin-left: 1.5em; margin-bottom: 0.75em;">
+										<li>Summer school wrap-up</li>
+										<li>Farewell</li>
+									</ul>
+								</div>
+							</div>
+
+							<h2 id="content">Content of the online intro-day (August 11th)</h2>
 							<p>
 								The online into-day provides an overview of the Edu4Chip Summer School, covering fundamental concepts in chip and digital design. Participants will engage in interactive exercises and receive guidance on the student project to prepare for the in-person sessions. Find below a summary of the intro-day activities.
 							</p>
@@ -218,7 +453,7 @@
 								</li>
 							</ul>
 
-							<h2 id="content">In-person program (August 18th to 22nd)</h2>
+							<h2 id="content">Content of the in-person program (August 18th to 22nd)</h2>
 							<p>
 								The in-person program offers a blend of keynotes, lectures, and hands-on activities. In addition to the lectures and keynotes, we also planned some activities to connect, relax, and explore both the academic environment and the vibe of Copenhagen. Find the details below.
 							</p>
@@ -528,19 +763,20 @@
 								<li style="margin-top: 1em;">
 									<strong>Student presentations (counts as the exam)</strong>
 									<br>
-									An interactive poster/presentation session where students present their project outcomes, followed by an evaluation to conclude the summer school.
+									An interactive presentation session where students present their project outcomes, followed by an evaluation to conclude the summer school.
 								</li>
 
 								<li style="margin-top: 1em;">
-									<strong>Visit and tour of Copenhagen</strong>
+									<strong>Walking tour of Copenhagen (bring an umbrella!)</strong>
 									<br>
 									A tour to provide participants with an opportunity to explore the city’s vibe and architecture.
+									Bus to Copenhagen <strong>departs at 16:10 from outside Building 101</strong> (summer school location).
 								</li>
 
 								<li style="margin-top: 1em;">
 									<strong>Picnic on DTU premises</strong>
 									<br>
-									A welcome picnic on DTU premises.
+									A welcome picnic on DTU premises. Location: Wicked Rabbit Kantine in Building 342. <strong>Google Maps link:</strong> <a href="https://maps.app.goo.gl/iKtAkE2Es2kXks3R6" target="_blank">View location</a>
 								</li>
 
 								<li style="margin-top: 1em;">
@@ -552,7 +788,7 @@
 								<li style="margin-top: 1em;">
 									<strong>Social dinner in Copenhagen</strong>
 									<br>
-									A social dinner in Copenhagen open to all the participants.
+									A social dinner in Copenhagen open to all the participants. Location: Restaurant Sult i Cinemateket, Vognmagergade 8B, 1120 København K. <strong>Google Maps link:</strong> <a href="https://maps.app.goo.gl/GLHnZgnss3ZhzjYb9" target="_blank">View location</a>
 								</li>
 
 							</ul>
