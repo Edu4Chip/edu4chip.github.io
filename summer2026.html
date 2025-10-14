@@ -19,6 +19,50 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 		<!--link rel="manifest" href="site.webmanifest"-->
+
+		<style>
+			.schedule-table {
+			display: flex;
+			flex-wrap: wrap;
+			}
+
+			.schedule-column-1 {
+			width: 50%;
+			box-sizing: border-box;
+			padding-left: 0px;
+			padding-top: 10px;
+			padding-right: 10px;
+			padding-bottom: 10px;
+			border-right: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			}
+			.schedule-column-2 {
+			width: 50%;
+			box-sizing: border-box;
+			padding-left: 10px;
+			padding-top: 10px;
+			padding-right: 0px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #ccc;
+			}
+
+			@media (max-width: 800px) {
+			.schedule-column-1 {
+				width: 100%;
+				padding-left: 0px;
+				padding-right: 0px;
+				border-right: 0px;
+				border-bottom: 0px
+			}
+			.schedule-column-2 {
+				width: 100%;
+				box-sizing: border-box;
+				padding-left: 0px;
+				border-bottom: 0px
+			}
+			}
+		</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -43,52 +87,56 @@
 							</ul>
 						</header>
 						<!-- END Header -->
-<!-- ABOVE THIS POINT IS COMMON TO ALL PAGES -->
+<!-- ABOVE THIS POINT IS COMMON TO ALL PAGES -- (!!! not for this page !!! - extra style needed) -->
 <!--------------------------------------------->
 <!--------------------------------------------->
+						<!-- Banner -->
+						<section style="margin-top: 3em; margin-bottom: 1em; padding-top: 0em; padding-bottom: 0em;">
+							<span class="image main"><img src="images/summer_26/summer2026.jpg" alt="" /></span>
+						</section>
 
-						<!-- Section -->
+						<!-- Content -->
 						<section>
-							<header class="main">
-								<h1>Contact</h1>
-							</header>
+							<!--header class="main">
+								<h2>Edu4Chip Summer School 2025 on Chip Design</h2>
+							</header-->
 
 							<!-- Descriptions -->
-							<h2 id="content">Inquiries about the project</h2>
+							<!--h2 id="content">
+								Summary
+							</h2-->
+
+							<h1 id="overview" style="margin-top: -0.75em;">Overview</h1>
 							<p>
-								For inquiries about the Edu4Chip project, please contact the project coordinator.
+								<figure class="image right">
+									<img src="images/summer_26/place.jpg" alt=""/>
+									<figcaption style="font-size: 0.8em; text-align: right;">Photo credit: ??.</figcaption>
+								</figure>
+								Welcome to the <strong>Edu4Chip Summer School 2026</strong>, taking place in the beautiful <strong>South of France</strong>, between <strong>Aix-en-Provence</strong> and <strong>Marseille</strong>. 
+								The summer school will explore topics in chip design and related areas, with the main theme to be announced soon.
 							</p>
 							<p>
-								<table>
-									<tbody>
-										<tr>
-											<td style="max-width:100%; white-space:nowrap; width:75px;">
-												<img src="images/michael_pehl.jpg" alt="" style="vertical-align:top; width:75px;"/>
-											</td>
-											<td>
-												<strong>PD Dr.-Ing. habil. Michael Pehl</strong></br>
-												<strong>Technical University of Munich</strong></br>
-												<strong>Chair of Security in Information Technology (Prof. Sigl)</strong></br>
-												<strong>Mail: </strong><a href="mailto:m.pehl@tum.de">m.pehl@tum.de</a></br>
-												<strong>Phone:</strong> +49 (89) 289 - 28252</br>
-												<strong>Room:</strong> 0101.Z1.013 - <a href="https://campus.tum.de/tumonline/ris.einzelraum?raumkey=39047">Map</a></br>
-												<strong>Homepage: </strong><a href="https://www.ce.cit.tum.de/eisec/mitarbeiter/michael-pehl/">Link to homepage</a></br>
-											</td>
-										</tr>
-									</tbody>
-								  </table>
+								The event is organized by <strong>IMT / Mines Saint-Étienne</strong> in collaboration with <strong>Edu4Chip partner institutions</strong>.
+							</p>
+							<p>
+								The program is tentatively scheduled for <strong>August 17th to 22nd, 2026</strong>, and will include lectures, hands-on activities, and social events.
 							</p>
 
-							<h2 id="content">Question about the program as a student</h2>
+							<h4>Target audience and scope</h4>
 							<p>
-								If you question or want to join the program as a student, visit the page <a href="join.html">Join the program</a> to find the right contact at your univeristy.
-								<ul class="actions">
-									<li><a href="join.html" class="button big">Join the program</a></li>
-
-								</ul>
+								The summer school is designed for <strong>Bachelor students</strong> and <strong>Master students</strong> with a background in electrical engineering, computer science and engineering, or physics, the summer school emphasizes practical learning activities.
 							</p>
+
+							<h2>
+								<strong>More information will be announced soon. Stay tuned!</strong> 
+							</h2>
+
 
 						</section>
+
+
+
+
 
 
 <!--------------------------------------------->
@@ -133,16 +181,19 @@
 							<li><a href="index.html">Homepage</a></li>
 							<li><a href="program.html">Program and Curriculum</a></li>
 							<li><a href="join.html">Join the Program</a></li>
-							<li><a href="summer2026.html">Summer School 2026</a></li>
-							<li><a href="summer2025.html">Summer School 2025</a></li>
-							<!--li>
-								<span class="opener">Summer Schools</span>
+							<li>
+								<span class="opener active">Summer School 2026</span>
 								<ul>
-									<li><a href="summer_schools.html">Summer School 2025</a></li>
-									<li><a href="summer_schools.html">Summer School 2026</a></li>
-									<li><a href="summer_schools.html">Summer School 2027</a></li>
+									<li><a href="#overview">Overview</a></li>
+									<!--li><a href="#practical_information">Practical Information</a></li-->
+									<!--li><a href="#program-and-content">Program and Content</a></li-->
+									<!--li><a href="#pre-registration">Pre-Registration</a></li-->
+									<!--li><a href="#financial-support">Financial Support</a></li-->
+									<!--li><a href="#other_information">Other Information</a></li-->
+									<!--li><a href="#questions-and-contacts">Questions and Contacts</a></li-->
 								</ul>
-							</li-->
+							</li>
+							<li><a href="summer2025.html">Summer School 2025</a></li>
 							<li><a href="news.html">News and Achievements</a></li>
 							<li><a href="project.html">Project Details</a></li>
 							<li><a href="contact.html">Contact</a></li>
