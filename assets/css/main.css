@@ -14,7 +14,7 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, header, pagefooter, copyright, hgroup, menu, nav, output, ruby,
+footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -24,7 +24,7 @@ section, summary, time, mark, audio, video {
   vertical-align: baseline; }
 
 article, aside, details, figcaption, figure,
-footer, header,pagefooter, copyright, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
@@ -1006,7 +1006,7 @@ header.major > :last-child {
 header.main > :last-child {
   margin: 0 0 1em 0; }
 
-pagefooter p {
+#pagefooter p {
   font-family: "Roboto Slab", serif;
   font-size: 1em;
   font-weight: 400;
@@ -1014,13 +1014,13 @@ pagefooter p {
   margin-top: -0.5em;
   text-transform: uppercase; }
 
-pagefooter.major > :last-child {
+#pagefooter.major > :last-child {
   border-bottom: solid 3px #003399;
   display: inline-block;
   margin: 0 0 2em 0;
   padding: 0 0.75em 0.5em 0; }
 
-pagefooter.main > :last-child {
+#pagefooter.main > :last-child {
   margin: 0 0 1em 0; }
 
 /* Form */
@@ -2262,7 +2262,7 @@ button,
     color: inherit; }
 
 /* Menu */
-#menu ul {
+#menu ul, #social-menu ul {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -2275,16 +2275,16 @@ button,
   margin-bottom: 0;
   padding: 0;
   text-transform: uppercase; }
-  #menu ul a, #menu ul span {
+  #menu ul a, #menu ul span, #social-menu ul a, #social-menu ul span {
     border-bottom: 0;
     color: inherit;
     cursor: pointer;
     display: block;
     font-size: 0.9em;
     padding: 0.625em 0; }
-    #menu ul a:hover, #menu ul span:hover {
+    #menu ul a:hover, #menu ul span:hover, #social-menu ul a:hover, #social-menu ul span:hover {
       color: #003399; }
-    #menu ul a.opener, #menu ul span.opener {
+    #menu ul a.opener, #menu ul span.opener, #social-menu ul a.opener, #social-menu ul span.opener {
       -moz-transition: color 0.2s ease-in-out;
       -webkit-transition: color 0.2s ease-in-out;
       -ms-transition: color 0.2s ease-in-out;
@@ -2292,7 +2292,7 @@ button,
       text-decoration: none;
       -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
       position: relative; }
-      #menu ul a.opener:before, #menu ul span.opener:before {
+      #menu ul a.opener:before, #menu ul span.opener:before, #social-menu ul a.opener:before, #social-menu ul span.opener:before {
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         display: inline-block;
@@ -2303,7 +2303,7 @@ button,
         text-transform: none !important;
         font-family: 'Font Awesome 5 Free';
         font-weight: 900; }
-      #menu ul a.opener:before, #menu ul span.opener:before {
+      #menu ul a.opener:before, #menu ul span.opener:before, #social-menu ul a.opener:before, #social-menu ul span.opener:before {
         -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
         -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
         -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
@@ -2312,31 +2312,31 @@ button,
         content: '\f078';
         position: absolute;
         right: 0; }
-      #menu ul a.opener:hover:before, #menu ul span.opener:hover:before {
+      #menu ul a.opener:hover:before, #menu ul span.opener:hover:before, #social-menu ul a.opener:hover:before, #social-menu ul span.opener:hover:before {
         color: #003399; }
-      #menu ul a.opener.active + ul, #menu ul span.opener.active + ul {
+      #menu ul a.opener.active + ul, #menu ul span.opener.active + ul, #social-menu ul a.opener.active + ul, #social-menu ul span.opener.active + ul {
         display: block; }
-      #menu ul a.opener.active:before, #menu ul span.opener.active:before {
+      #menu ul a.opener.active:before, #menu ul span.opener.active:before, #social-menu ul a.opener.active:before, #social-menu ul span.opener.active:before {
         -moz-transform: rotate(-180deg);
         -webkit-transform: rotate(-180deg);
         -ms-transform: rotate(-180deg);
         transform: rotate(-180deg); }
 
-#menu > ul > li {
+#menu > ul > li, #social-menu > ul > li {
   border-top: solid 1px rgba(210, 215, 217, 0.75);
   margin: 0.5em 0 0 0;
   padding: 0.5em 0 0 0; }
-  #menu > ul > li > ul {
+  #menu > ul > li > ul, #social-menu > ul > li > ul {
     color: #9fa3a6;
     display: none;
     margin: 0.5em 0 1.5em 0;
     padding-left: 1em; }
-    #menu > ul > li > ul a, #menu > ul > li > ul span {
+    #menu > ul > li > ul a, #menu > ul > li > ul span, #social-menu > ul > li > ul a, #social-menu > ul > li > ul span {
       font-size: 0.8em; }
-    #menu > ul > li > ul > li {
+    #menu > ul > li > ul > li, #social-menu > ul > li > ul > li {
       margin: 0.125em 0 0 0;
       padding: 0.125em 0 0 0; }
-  #menu > ul > li:first-child {
+  #menu > ul > li:first-child, #social-menu > ul > li:first-child {
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
